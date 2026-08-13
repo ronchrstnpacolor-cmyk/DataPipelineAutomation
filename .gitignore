@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Copied into function source dirs at deploy time; not committed.
+src/ingest_hourly/common/
+src/ingest_daily/common/
+
+# WSL/Windows download-marker artifacts
+*:Zone.Identifier
