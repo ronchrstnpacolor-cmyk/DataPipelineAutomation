@@ -4,11 +4,9 @@ Serverless GCP pipeline that ingests Tesla-related news from [NewsAPI](https://n
 stages raw JSON in Cloud Storage, loads it into BigQuery, and curates it for a
 Looker Studio dashboard.
 
-Full design, architecture, and step-by-step implementation details: **[DESIGN.md](DESIGN.md)**.
+Full design, architecture, and step-by-step implementation details: **[docs/DESIGN.md](docs/DESIGN.md)**.
 
 ## Quick start
-
-Run from the repo root:
 
 ```bash
 export PROJECT_ID=<your-gcp-project-id>
@@ -44,4 +42,3 @@ PYTHONPATH=src pytest tests/
 - `sql/` — BigQuery raw table schema, curated view, scheduled query.
 - `infra/` — `gcloud`/`gsutil`/`bq` deployment scripts.
 - `docs/DESIGN.md` — full architecture and implementation guide.
-- `docs/README.md` — this file.
